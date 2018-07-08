@@ -46,6 +46,7 @@ class PropTypesPlugin extends Component {
             <th>Required</th>
           </tr>
         </thead>
+
         <tbody>
           {Object.entries(this.state.componentProps).map(
             ([prop, { type, defaultValue, required }]) => (
