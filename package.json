@@ -11,12 +11,17 @@
   "scripts": {
     "test": "jest",
     "precommit": "lint-staged",
-    "lint": "xo"
+    "lint": "xo",
+    "release": "github-semantic-version --bump --changelog --push --publish"
   },
   "dependencies": {
     "parse-prop-types": "^0.2.0",
     "prop-types": "^15.6.2",
     "react": "^16.4.1"
+  },
+  "repository": {
+    "url": "https://github.com/hipstersmoothie/ignite-plugin-prop-types",
+    "type": "git"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0-beta.52",
@@ -31,6 +36,7 @@
     "eslint-config-xo-react": "^0.17.0",
     "eslint-plugin-jest": "^21.17.0",
     "eslint-plugin-react": "^7.10.0",
+    "github-semantic-version": "^7.6.0",
     "jest": "^23.3.0",
     "jest-junit": "^5.1.0",
     "lint-staged": "^7.2.0",
@@ -108,5 +114,14 @@
   },
   "jest-junit": {
     "output": "./coverage/junit/junit.xml"
+  },
+  "gsv": {
+    "startVersion": "1.0.0",
+    "majorLabel": "major",
+    "minorLabel": "minor",
+    "patchLabel": "patch",
+    "internalLabel": "internal",
+    "releasedLabel": "Released",
+    "addReleasedLabelOnSuccess": true
   }
 }
