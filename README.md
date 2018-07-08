@@ -4,7 +4,7 @@
   <h1>
     Ignite-Plugin-Prop-Types
   </h1>
-  <p>git remote add origin https://github.com/hipstersmoothie/ignite-plugin-prop-types.git</p>
+  <p>Takes a react component and displays a table with it's prop-types.</p>
 </div>
 
 ## Usage
