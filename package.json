@@ -1,0 +1,75 @@
+{
+  "name": "ignite-plugin-prop-types",
+  "version": "1.0.0",
+  "description": "Takes a react component and displays a table with it's prop-types",
+  "main": "src/index.js",
+  "license": "MIT",
+  "author": {
+    "name": "Andrew Lisowski",
+    "email": "lisowski54@gmail.com"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "precommit": "lint-staged",
+    "lint": "xo"
+  },
+  "dependencies": {
+    "parse-prop-types": "^0.2.0",
+    "prop-types": "^15.6.2",
+    "react": "^16.4.1"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.5",
+    "eslint-config-xo-react": "^0.17.0",
+    "eslint-plugin-jest": "^21.17.0",
+    "eslint-plugin-react": "^7.10.0",
+    "lint-staged": "^7.2.0",
+    "prettier": "^1.13.7",
+    "xo": "^0.21.1"
+  },
+  "prettier": {
+    "singleQuote": true
+  },
+  "lint-staged": {
+    "*.{js,json,css,md}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "xo": {
+    "parser": "babel-eslint",
+    "extends": [
+      "prettier",
+      "xo-react/space"
+    ],
+    "plugins": [
+      "prettier",
+      "jest"
+    ],
+    "env": [
+      "browser",
+      "node",
+      "jest"
+    ],
+    "rules": {
+      "no-console": [
+        2,
+        {
+          "allow": [
+            "warn",
+            "error"
+          ]
+        }
+      ],
+      "max-params": [
+        1,
+        5
+      ],
+      "react/jsx-tag-spacing": {
+        "closingSlash": "never",
+        "beforeSelfClosing": "always",
+        "afterOpening": "never"
+      }
+    }
+  }
+}
