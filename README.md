@@ -35,3 +35,7 @@ Description of component.
 
 <PropTypes component='OtherComponentWithPropTypes' />
 ```
+
+Result:
+
+![Example Output Image](example.png)
