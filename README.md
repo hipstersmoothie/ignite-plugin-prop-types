@@ -1,3 +1,5 @@
+[![CircleCI branch](https://img.shields.io/circleci/project/github/hipstersmoothie/ignite-plugin-prop-types/master.svg?style=for-the-badge)](https://circleci.com/gh/hipstersmoothie/workflows/ignite-plugin-prop-types/tree/master) [![Codecov branch](https://img.shields.io/codecov/c/github/hipstersmoothie/ignite-plugin-prop-types/master.svg?style=for-the-badge)](https://codecov.io/gh/hipstersmoothie/ignite-plugin-prop-types/branch/master)
+
 <div align="center">
   <img width="200" height="200"
       src="https://s3.amazonaws.com/pix.iemoji.com/images/emoji/apple/ios-11/256/fire.png">
