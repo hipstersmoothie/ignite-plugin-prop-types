@@ -22,7 +22,7 @@ class PropTypesPlugin extends Component {
       ([name]) => name === this.props.component
     );
 
-    if (component[1]) {
+    if (component && component[1]) {
       component[1].provider().then(component => {
         this.setState({
           componentProps: parsePropTypes(component.default)

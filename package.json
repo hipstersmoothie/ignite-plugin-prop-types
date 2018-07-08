@@ -9,7 +9,7 @@
     "email": "lisowski54@gmail.com"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "precommit": "lint-staged",
     "lint": "xo"
   },
@@ -19,12 +19,23 @@
     "react": "^16.4.1"
   },
   "devDependencies": {
+    "@babel/core": "^7.0.0-beta.52",
+    "@babel/preset-env": "^7.0.0-beta.52",
+    "@babel/preset-react": "^7.0.0-beta.52",
+    "@babel/preset-stage-3": "^7.0.0-beta.52",
+    "babel-core": "7.0.0-bridge.0",
     "babel-eslint": "^8.2.5",
+    "babel-jest": "^23.2.0",
+    "eslint": "^5.0.1",
+    "eslint-config-prettier": "^2.9.0",
     "eslint-config-xo-react": "^0.17.0",
     "eslint-plugin-jest": "^21.17.0",
     "eslint-plugin-react": "^7.10.0",
+    "jest": "^23.3.0",
+    "jest-junit": "^5.1.0",
     "lint-staged": "^7.2.0",
     "prettier": "^1.13.7",
+    "react-test-renderer": "^16.4.1",
     "xo": "^0.21.1"
   },
   "prettier": {
@@ -71,5 +82,31 @@
         "afterOpening": "never"
       }
     }
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react",
+      "@babel/preset-stage-3"
+    ]
+  },
+  "jest": {
+    "reporters": [
+      "default",
+      "jest-junit"
+    ],
+    "collectCoverage": true,
+    "coverageDirectory": "./coverage",
+    "collectCoverageFrom": [
+      "src/**/*.js"
+    ],
+    "coverageReporters": [
+      "cobertura",
+      "html",
+      "lcov"
+    ]
+  },
+  "jest-junit": {
+    "output": "./coverage/junit/junit.xml"
   }
 }
