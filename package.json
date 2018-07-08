@@ -1,6 +1,6 @@
 {
   "name": "ignite-plugin-prop-types",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Takes a react component and displays a table with it's prop-types",
   "main": "src/index.js",
   "license": "MIT",
